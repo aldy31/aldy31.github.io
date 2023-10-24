@@ -64,7 +64,7 @@ const BackProject = ({ project }) => {
               step={0.01}
               min={0.01}
               name="amount"
-              placeholder="Amount (ETH)"
+              placeholder="Jumlah (ETH)"
               onChange={(e) => setAmount(e.target.value)}
               value={amount}
               required
@@ -77,7 +77,7 @@ const BackProject = ({ project }) => {
             text-white font-medium text-md leading-tight
             rounded-full shadow-md hover:bg-green-700 mt-5"
           >
-            Back Project
+           Donasi
           </button>
         </form>
       </div>

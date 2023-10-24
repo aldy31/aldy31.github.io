@@ -59,7 +59,7 @@ const CreateProject = () => {
       >
         <form onSubmit={handleSubmit} className="flex flex-col">
           <div className="flex justify-between items-center">
-            <p className="font-semibold">Add Project</p>
+            <p className="font-semibold">Buka Donasi</p>
             <button
               onClick={onClose}
               type="button"
@@ -71,14 +71,14 @@ const CreateProject = () => {
 
           <div className="flex justify-center items-center mt-5">
             <div className="rounded-xl overflow-hidden h-20 w-20">
-              <img
+              {/* <img
                 src={
                   imageURL ||
                   'https://media.wired.com/photos/5926e64caf95806129f50fde/master/pass/AnkiHP.jpg'
                 }
                 alt="project title"
                 className="h-full w-full object-cover cursor-pointer"
-              />
+              /> */}
             </div>
           </div>
 
@@ -92,7 +92,7 @@ const CreateProject = () => {
             focus:ring-0"
               type="text"
               name="title"
-              placeholder="Title"
+              placeholder="Nama"
               onChange={(e) => setTitle(e.target.value)}
               value={title}
               required
@@ -111,7 +111,7 @@ const CreateProject = () => {
               step={0.01}
               min={0.01}
               name="cost"
-              placeholder="cost (ETH)"
+              placeholder="Target (ETH)"
               onChange={(e) => setCost(e.target.value)}
               value={cost}
               required
@@ -128,7 +128,7 @@ const CreateProject = () => {
             focus:ring-0"
               type="date"
               name="date"
-              placeholder="Expires"
+              placeholder="Deadline"
               onChange={(e) => setDate(e.target.value)}
               value={date}
               required
@@ -145,7 +145,7 @@ const CreateProject = () => {
             focus:ring-0"
               type="url"
               name="imageURL"
-              placeholder="Image URL"
+              placeholder="Gambar (URL)"
               onChange={(e) => setImageURL(e.target.value)}
               value={imageURL}
               required
@@ -162,7 +162,7 @@ const CreateProject = () => {
             focus:ring-0"
               type="text"
               name="description"
-              placeholder="Description"
+              placeholder="Deskripsi"
               onChange={(e) => setDescription(e.target.value)}
               value={description}
               required
@@ -171,11 +171,11 @@ const CreateProject = () => {
 
           <button
             type="submit"
-            className="inline-block px-6 py-2.5 bg-green-600
+            className="inline-block px-6 py-2.5 bg-blue-600
             text-white font-medium text-md leading-tight
-            rounded-full shadow-md hover:bg-green-700 mt-5"
+            rounded-full shadow-md hover:bg-blue-700 mt-5"
           >
-            Submit Project
+            Buka Donasi
           </button>
         </form>
       </div>

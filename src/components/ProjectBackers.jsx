@@ -18,14 +18,14 @@ const ProjectBackers = ({ backers }) => {
                 className="text-sm font-medium
                 px-6 py-4 text-left"
               >
-                Backer
+                Donatur
               </th>
               <th
                 scope="col"
                 className="text-sm font-medium
                 px-6 py-4 text-left"
               >
-                Donations
+                Jumlah Donasi
               </th>
               <th
                 scope="col"
@@ -39,7 +39,7 @@ const ProjectBackers = ({ backers }) => {
                 className="text-sm font-medium
                 px-6 py-4 text-left"
               >
-                Time
+                Waktu
               </th>
             </tr>
           </thead>

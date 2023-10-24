@@ -51,8 +51,8 @@ const DeleteProject = ({ project }) => {
           </div>
 
           <div className="flex flex-col justify-center items-center rounded-xl mt-5">
-            <p>Are you sure?</p>
-            <small className="text-red-400">This is irreversible!</small>
+            <p>Apakah anda yakin?</p>
+            <small className="text-red-400">Project yang sudah di hapus tidak dapat di batalkan</small>
           </div>
 
           <button

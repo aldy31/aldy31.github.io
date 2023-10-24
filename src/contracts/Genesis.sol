@@ -267,3 +267,7 @@ contract Genesis {
         require(success);
     }
 }
+
+
+// PENGUJIAN SMART CONTRACT
+

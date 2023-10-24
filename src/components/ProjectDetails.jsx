@@ -33,7 +33,7 @@ const ProjectDetails = ({ project }) => {
               <small className="text-gray-500">
                 {expired
                   ? 'Expired'
-                  : daysRemaining(project.expiresAt) + ' left'}
+                  : daysRemaining(project.expiresAt) }
               </small>
             </div>
 
@@ -50,7 +50,7 @@ const ProjectDetails = ({ project }) => {
                   </small>
                 ) : null}
                 <small className="text-gray-500 font-bold">
-                  {project?.backers} Backer{project?.backers == 1 ? '' : 's'}
+                  {project?.backers} Donatur{project?.backers == 1 ? '' : ''}
                 </small>
               </div>
 
@@ -85,7 +85,7 @@ const ProjectDetails = ({ project }) => {
               </div>
 
               <div className="flex justify-between items-center font-bold mt-2">
-                <small>{project?.raised} ETH Raised</small>
+                <small>{project?.raised} ETH Terkumpul</small>
                 <small className="flex justify-start items-center">
                   <FaEthereum />
                   <span>{project?.cost} ETH</span>
@@ -101,7 +101,7 @@ const ProjectDetails = ({ project }) => {
               rounded-full shadow-md hover:bg-green-700"
                     onClick={() => setGlobalState('backModal', 'scale-100')}
                   >
-                    Back Project
+                    Donasi
                   </button>
                 ) : null}
 
