@@ -32,7 +32,7 @@ const Header = () => {
         className="flex items-center
       text-xl text-black space-x-1" >
         <span>Profile</span>
-      </Link> */}
+      </Link> */} 
       
       </nav>
     

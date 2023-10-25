@@ -55,8 +55,18 @@ contract Genesis {
 
     event Action (
         uint256 id,
+        string title,
+        address owner,
         string actionType,
         address indexed executor,
+        uint256 timestamp
+    );
+
+    event ProjectCreated (
+        uint256 id,
+        string title,
+        address owner,
+        string actionType,
         uint256 timestamp
     );
 
@@ -92,10 +102,11 @@ contract Genesis {
         projectsOf[msg.sender].push(project);
         stats.totalProjects += 1;
 
-        emit Action (
+        emit  ProjectCreated (
+           "PROJECT CREATED",
             projectCount++,
-            "PROJECT CREATED",
-            msg.sender,
+            title,
+            owner,
             block.timestamp
         );
         return true;
@@ -120,6 +131,7 @@ contract Genesis {
 
         emit Action (
             id,
+            title,
             "PROJECT UPDATED",
             msg.sender,
             block.timestamp
@@ -137,6 +149,7 @@ contract Genesis {
 
         emit Action (
             id,
+            title,
             "PROJECT DELETED",
             msg.sender,
             block.timestamp
